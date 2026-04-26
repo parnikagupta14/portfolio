@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Parnika Gupta Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+nav {
+    background: #020617;
+    padding: 15px;
+    text-align: center;
+}
+nav a {
+    color: #38bdf8;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.hero h1 {
+    font-size: 38px;
+}
+.hero span {
+    color: #38bdf8;
+}
+.hero p {
+    color: #94a3b8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background: #1e293b;
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.skill {
+    background: #1e293b;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+
+<img src="profile.jpg.png" alt="profile">
+
+<h1>Hi, I'm <span>Parnika Gupta</span> 👋</h1>
+
+<p id="typing"></p>
+
+<a class="btn" href="https://github.com/parnikagupta14" target="_blank">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/parnika-gupta12" target="_blank">LinkedIn</a>
+<a class="btn" href="https://drive.google.com/file/d/1F2k0RiIcSx9306mkm4amOAN8ppE0r1RH/view?usp=sharing" target="_blank">Resume</a>
+
+</div>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+B.Tech CSE (AIML) student passionate about building AI & IoT systems to solve real-world problems.
+</p>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Customer Support AI</h3>
+<p>AI system with feedback learning loop and smart escalation.</p>
+<a class="btn" href="#" onclick="return false;">View Project</a>
+</div>
+
+<div class="card">
+<h3>SafeSphere IoT</h3>
+<p>Smart air quality & hazard detection system with automation.</p>
+<p><i>Coming Soon</i></p>
+</div>
+
+</div>
+
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="skills">
+<div class="skill">Python</div>
+<div class="skill">Java</div>
+<div class="skill">C</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">FastAPI</div>
+<div class="skill">JavaScript</div>
+<div class="skill">CSS</div>
+<div class="skill">SQL</div>
+<div class="skill">IoT</div>
+</div>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: gparnika530@gmail.com</p>
+</section>
+
+<footer>
+<p>© 2026 Parnika Gupta</p>
+</footer>
+
+<!-- Typing Animation -->
+<script id="ultra2">
+let text = "AI/ML Developer | Backend Developer | IoT Enthusiast";
+let i = 0;
+
+function type() {
+    if (i < text.length) {
+        document.getElementById("typing").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(type, 50);
+    }
+}
+type();
+</script>
+
+</body>
+</html>
